@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MyApp</string>
+    <string name="insideText">Вперед -></string>
+    <string name="aboutActivity">
+        Привет! Меня зовут Рената, я разработала это приложение для дисциплины "Разработка интернет приложений.</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="backButton">Вернуться в начало?</string>
+    <string name="aboutThirdActivity">Очень приятно</string>
+    <string name="firstButton">*тык*</string>
+    <string name="wrongButton">Не работает, не тыкать</string>
+    <string name="thirdButton">Завершить</string>
+    <string name="back">Все готово. Пока -></string>
+    <string name="meet">Давайте познакомимся?</string>
+    <string name="name">Как Вас зовут?</string>
+    <string name="age">Сколько Вам лет?</string>
+    <string name="city">Откуда Вы?</string>
+    <string name="nextPage">Хорошо, вперед -></string>
+    <string name="aboutName">Ваше имя</string>
+    <string name="aboutAge">Ваш возраст</string>
+    <string name="aboutCity">Ваш город</string>
+</resources>
