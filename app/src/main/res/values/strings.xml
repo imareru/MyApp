@@ -18,4 +18,5 @@
     <string name="aboutName">Ваше имя</string>
     <string name="aboutAge">Ваш возраст</string>
     <string name="aboutCity">Ваш город</string>
+    <string name="aboutCountries">Минутка полезной информации</string>
 </resources>

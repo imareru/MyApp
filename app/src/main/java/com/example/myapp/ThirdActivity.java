@@ -53,6 +53,8 @@ public class ThirdActivity extends AppCompatActivity {
     }
 
     public void close(View view){
+        Intent goNext = new Intent(this, CountriesActivity.class);
+        startActivity(goNext);
         //System.exit(1);
         //finish();
         //Log.d(TAG, "App is closed");

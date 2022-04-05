@@ -22,7 +22,7 @@
         android:id="@+id/aboutUser"
         android:layout_width="329dp"
         android:layout_height="80dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="36dp"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -69,7 +69,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="33dp"
-                android:text="@string/wrongButton"
+                android:text="@string/nextPage"
                 android:textAlignment="center"
                 android:textColor="@color/grassGreen" />
 
@@ -78,7 +78,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:onClick="close"
-                android:text="@string/thirdButton" />
+                android:text="@string/firstButton" />
         </LinearLayout>
     </LinearLayout>
 
