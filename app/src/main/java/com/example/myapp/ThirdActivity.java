@@ -24,26 +24,11 @@ public class ThirdActivity extends AppCompatActivity {
 
         TextView setUserInformation = findViewById(R.id.aboutUser);
 
-        if(arguments!=null){
             String name = arguments.get("user_name").toString();
             String city = arguments.getString("user_city");
             String age = arguments.getString("user_age");
             setUserInformation.setText(name + ", " + age + ", из города " + city);
-        } else {
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
-            builder.setTitle("Ошибка")
-                    .setMessage("Вернитесь назад, вы заполнили не все поля")
-                    .setPositiveButton("ОК", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            // Закрываем окно
-                            dialog.cancel();
-                        }
-                    });
-            builder.create();
-            Intent backToSecond = new Intent(this, SecondActivity.class);
-            backToSecond.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-            startActivity(backToSecond);
-        }
+
     }
 
     public void goBack(View view) {

@@ -11,18 +11,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity
-            android:name=".CountriesActivity"
+            android:name=".FilesActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>
         <activity
+            android:name=".CountriesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".ThirdActivity"
             android:exported="false"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SecondActivity"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

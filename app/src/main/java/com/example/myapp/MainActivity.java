@@ -49,9 +49,18 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
         Log.d(TAG, "onRestart");
     }
-    public void goTo(View view) {
+    public void goToExcange(View view) {
         Intent secondActivity = new Intent(this, SecondActivity.class);
         startActivity(secondActivity);
     }
 
+    public void goToFlags(View view){
+        Intent flagActivity = new Intent(this, CountriesActivity.class);
+        startActivity(flagActivity);
+    }
+
+    public void goToFiles(View view){
+        Intent filesActivity = new Intent(this, FilesActivity.class);
+        startActivity(filesActivity);
+    }
 }

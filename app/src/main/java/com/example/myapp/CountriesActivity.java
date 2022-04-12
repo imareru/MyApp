@@ -2,6 +2,7 @@ package com.example.myapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,6 +15,7 @@ public class CountriesActivity extends AppCompatActivity {
 
     ArrayList<State> states = new ArrayList<State>();
     ListView countriesList;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,12 @@ public class CountriesActivity extends AppCompatActivity {
         states.add(new State ("Россия", "Москва", R.drawable.russia));
         states.add(new State ("Турция", "Анкара", R.drawable.turkey));
         states.add(new State ("Япония", "Токио", R.drawable.japan));
+    }
+
+    public void goBack(View view) {
+        Intent backToMain = new Intent(this, MainActivity.class);
+        backToMain.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
+        startActivity(backToMain);
     }
 }
 

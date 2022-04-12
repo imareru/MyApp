@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name">MyApp</string>
-    <string name="insideText">Вперед -></string>
+
+    <string name="forExchange">Переход к обмену данными</string>
+    <string name="forFlags">Переход к странам</string>
+    <string name="forFiles">Переход к работе с файлами</string>
+
     <string name="aboutActivity">
         Привет! Меня зовут Рената, я разработала это приложение для дисциплины "Разработка интернет приложений.</string>
     <string name="welcome">Добро пожаловать!</string>
-    <string name="backButton">Вернуться в начало?</string>
+    <string name="backButton">Вернуться в начало</string>
     <string name="aboutThirdActivity">Очень приятно</string>
-    <string name="firstButton">*тык*</string>
+    <string name="tapButton">*тык*</string>
     <string name="wrongButton">Не работает, не тыкать</string>
     <string name="thirdButton">Завершить</string>
     <string name="back">Все готово. Пока -></string>
@@ -19,4 +23,10 @@
     <string name="aboutAge">Ваш возраст</string>
     <string name="aboutCity">Ваш город</string>
     <string name="aboutCountries">Минутка полезной информации</string>
+    <string name="arrow">-></string>
+    <string name="aboutFiles">Работа с файлами</string>
+    <string name="inputText">Введите текст</string>
+    <string name="outputText">Получите текст</string>
+    <string name="saveButton">Сохранить</string>
+    <string name="openButton">Открыть</string>
 </resources>

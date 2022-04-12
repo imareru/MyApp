@@ -6,14 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".CountriesActivity">
 
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="120dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="goBack"
+        android:text="@string/tapButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/backButton"
+        android:textColor="@color/grassGreen"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ListView
         android:id="@+id/countriesList"
-        android:layout_width="400dp"
-        android:layout_height="592dp"
+        android:layout_width="397dp"
+        android:layout_height="517dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.387" >
+
+    </ListView>
 
     <TextView
         android:id="@+id/textView9"

@@ -69,7 +69,8 @@
             android:importantForAutofill="no"
             android:inputType="textMultiLine"
             android:textColor="@color/white"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            />
 
     </LinearLayout>
 
@@ -150,7 +151,7 @@
         android:layout_height="51dp"
         android:fontFamily="@font/comfortaa"
         android:onClick="goTo3"
-        android:text="@string/firstButton"
+        android:text="@string/tapButton"
         app:cornerRadius="0dp"
         app:iconPadding="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
