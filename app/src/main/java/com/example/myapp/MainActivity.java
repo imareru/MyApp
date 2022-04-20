@@ -63,4 +63,9 @@ public class MainActivity extends AppCompatActivity {
         Intent filesActivity = new Intent(this, FilesActivity.class);
         startActivity(filesActivity);
     }
+
+    public void goToSd(View view){
+        Intent sdActivity = new Intent(this, SDActivity.class);
+        startActivity(sdActivity);
+    }
 }

@@ -52,93 +52,120 @@
         app:srcCompat="@drawable/myphoto" />
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="110dp"
-        android:layout_height="165dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginBottom="48dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/button"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="108dp"
-            android:layout_height="51dp"
-            android:fontFamily="@font/comfortaa"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:onClick="goToExcange"
-            android:text="@string/tapButton"
-            app:cornerRadius="0dp"
-            app:iconPadding="0dp"
-            tools:ignore="DuplicateSpeakableTextCheck" />
-
-        <Button
-            android:id="@+id/button5"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="108dp"
-            android:layout_height="51dp"
-            android:fontFamily="@font/comfortaa"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:onClick="goToFlags"
-            android:text="@string/tapButton"
-            app:cornerRadius="0dp"
-            app:iconPadding="0dp" />
-
-        <Button
-            android:id="@+id/button6"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="108dp"
-            android:layout_height="51dp"
-            android:fontFamily="@font/comfortaa"
-            android:insetTop="0dp"
-            android:insetBottom="0dp"
-            android:onClick="goToFiles"
-            android:text="@string/tapButton"
-            app:cornerRadius="0dp"
-            app:iconPadding="0dp" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="254dp"
-        android:layout_height="165dp"
-        android:orientation="vertical"
+        android:layout_width="409dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="36dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.153"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.2" >
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="55"
-            android:fontFamily="@font/comfortaa"
-            android:text="@string/forExchange"
-            android:textColor="@color/grassGreen" />
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="110dp"
+            android:layout_height="165dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="45dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="55"
-            android:fontFamily="@font/comfortaa"
-            android:text="@string/forFlags"
-            android:textColor="@color/grassGreen" />
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/comfortaa"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="goToExcange"
+                android:text="@string/tapButton"
+                app:cornerRadius="0dp"
+                app:iconPadding="0dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="55"
-            android:fontFamily="@font/comfortaa"
-            android:text="@string/forFiles"
-            android:textColor="@color/grassGreen" />
+            <Button
+                android:id="@+id/button5"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/comfortaa"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="goToFlags"
+                android:text="@string/tapButton"
+                app:cornerRadius="0dp"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/comfortaa"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="goToFiles"
+                android:text="@string/tapButton"
+                app:cornerRadius="0dp"
+                app:iconPadding="0dp" />
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="108dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/comfortaa"
+                android:insetTop="0dp"
+                android:insetBottom="0dp"
+                android:onClick="goToSd"
+                android:text="@string/tapButton"
+                app:cornerRadius="0dp"
+                app:iconPadding="0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="254dp"
+            android:layout_height="165dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/forExchange"
+                android:textColor="@color/grassGreen" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/forFlags"
+                android:textColor="@color/grassGreen" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/forFiles"
+                android:textColor="@color/grassGreen" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="40"
+                android:fontFamily="@font/comfortaa"
+                android:text="@string/forSD"
+                android:textColor="@color/grassGreen" />
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

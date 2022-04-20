@@ -4,6 +4,7 @@
     <string name="forExchange">Переход к обмену данными</string>
     <string name="forFlags">Переход к странам</string>
     <string name="forFiles">Переход к работе с файлами</string>
+    <string name="forSD">Переход к работе с SD-картой</string>
 
     <string name="aboutActivity">
         Привет! Меня зовут Рената, я разработала это приложение для дисциплины "Разработка интернет приложений.</string>
@@ -29,4 +30,10 @@
     <string name="outputText">Получите текст</string>
     <string name="saveButton">Сохранить</string>
     <string name="openButton">Открыть</string>
+    <string name="aboutSD">Работа с SD картой</string>
+
+    <string name="letsCheck">Проверка состояния памяти</string>
+    <string name="check">Проверить</string>
+    <string name="freeSpace">Доступно памяти:</string>
+    <string name="space">...</string>
 </resources>

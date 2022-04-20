@@ -4,6 +4,9 @@
     android:versionCode="1"
     android:versionName="1.0">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_myapp"
@@ -11,14 +14,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApp">
         <activity
-            android:name=".FilesActivity"
+            android:name=".SDActivity"
             android:exported="true"
             android:screenOrientation="portrait">
         </activity>
         <activity
+            android:name=".FilesActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".CountriesActivity"
             android:exported="true"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ThirdActivity"
             android:exported="false"
