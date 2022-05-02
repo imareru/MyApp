@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/open_dataExchange"
+        android:orderInCategory="1"
+        android:title="@string/dataItem" />
+    <item
+        android:id="@+id/open_files"
+        android:orderInCategory="3"
+        android:title="@string/itemFiles">
+        <menu>
+            <item android:id="@+id/open_innerMemory"
+                android:title="@string/itemInner" />
+            <item android:id="@+id/open_outMemory"
+                android:title="@string/itemOut" />
+        </menu>
+            </item>
+    <item
+        android:id="@+id/open_flags"
+        android:orderInCategory="2"
+        android:title="@string/itemFlags" />
+
+    <item
+        android:id="@+id/open_database"
+        android:orderInCategory="4"
+        android:title="@string/itemDB" />
+</menu>

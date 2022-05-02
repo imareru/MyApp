@@ -5,6 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -43,29 +46,44 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Log.d(TAG, "onResume");
     }
-
     @Override
     protected void onRestart(){
         super.onRestart();
         Log.d(TAG, "onRestart");
     }
-    public void goToExcange(View view) {
-        Intent secondActivity = new Intent(this, SecondActivity.class);
-        startActivity(secondActivity);
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
     }
 
-    public void goToFlags(View view){
-        Intent flagActivity = new Intent(this, CountriesActivity.class);
-        startActivity(flagActivity);
-    }
-
-    public void goToFiles(View view){
-        Intent filesActivity = new Intent(this, FilesActivity.class);
-        startActivity(filesActivity);
-    }
-
-    public void goToSd(View view){
-        Intent sdActivity = new Intent(this, SDActivity.class);
-        startActivity(sdActivity);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item){
+        int id = item.getItemId();
+        switch (id){
+            case R.id.open_dataExchange:
+                Intent secondActivity = new Intent(this, SecondActivity.class);
+                startActivity(secondActivity);
+                return true;
+            case R.id.open_flags:
+                Intent flagActivity = new Intent(this, CountriesActivity.class);
+                startActivity(flagActivity);
+                return true;
+            case R.id.open_outMemory:
+                Intent sdActivity = new Intent(this, SDActivity.class);
+                startActivity(sdActivity);
+                return true;
+            case R.id.open_innerMemory:
+                Intent filesActivity = new Intent(this, FilesActivity.class);
+                startActivity(filesActivity);
+                return true;
+            case R.id.open_database:
+                Intent DBActivity = new Intent(this, DataBaseActivity.class);
+                startActivity(DBActivity);
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

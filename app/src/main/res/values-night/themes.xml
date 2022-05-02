@@ -8,12 +8,14 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/beige</item>
         <item name="colorSecondaryVariant">@color/white</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/darkDarkGrey</item>
         <!-- Customize your theme here. -->
-        <item name="windowNoTitle">true</item>
-        <item name="android:windowBackground">@color/darkGrey</item>
+<!--        <item name="windowNoTitle">true</item>-->
+        <item name="android:windowBackground">@color/darkDarkGrey</item>
         <item name="android:textColorPrimary">@color/grassGreen</item>
-        <item name="android:navigationBarColor">@color/darkDarkGrey</item>
+        <item name="android:navigationBarColor">@color/darkGrey</item>
         <item name="android:statusBarColor">@color/darkDarkGrey</item>
+
+
     </style>
 </resources>

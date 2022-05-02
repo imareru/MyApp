@@ -9,7 +9,7 @@
     <string name="aboutActivity">
         Привет! Меня зовут Рената, я разработала это приложение для дисциплины "Разработка интернет приложений.</string>
     <string name="welcome">Добро пожаловать!</string>
-    <string name="backButton">Вернуться в начало</string>
+    <string name="backButton">В начало</string>
     <string name="aboutThirdActivity">Очень приятно</string>
     <string name="tapButton">*тык*</string>
     <string name="wrongButton">Не работает, не тыкать</string>
@@ -36,4 +36,22 @@
     <string name="check">Проверить</string>
     <string name="freeSpace">Доступно памяти:</string>
     <string name="space">...</string>
+
+    <string name="dataItem">Обмен данными</string>
+    <string name="itemFiles">Работа с файлами</string>
+    <string name="itemInner">Внутренняя память</string>
+    <string name="itemOut">Внешняя память</string>
+    <string name="itemFlags">Флаги</string>
+
+    <string name="itemDB">Работа с базой данных</string>
+    <string name="databaseName">База данных пользователей</string>
+    <string name="addItem">Добавить</string>
+    <string name="nameDB">Имя</string>
+    <string name="ageDB">Возраст</string>
+    <string name="cityDB">Город</string>
+    <string name="addActivity">Добавление</string>
+    <string name="editActivity">Редактирование</string>
+    <string name="accept">Подтвердить</string>
+    <string name="back">Назад</string>
+
 </resources>
