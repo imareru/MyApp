@@ -14,16 +14,8 @@
         android:theme="@style/Theme.MyApp">
         <activity
             android:name=".AddItemActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".EditActivity"
-            android:exported="false" />
+            android:exported="true"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".DataBaseActivity"
             android:exported="false" />

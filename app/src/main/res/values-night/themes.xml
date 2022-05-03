@@ -15,7 +15,7 @@
         <item name="android:textColorPrimary">@color/grassGreen</item>
         <item name="android:navigationBarColor">@color/darkGrey</item>
         <item name="android:statusBarColor">@color/darkDarkGrey</item>
-
+        <item name="android:windowFullscreen">true</item>
 
     </style>
 </resources>

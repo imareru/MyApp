@@ -10,7 +10,7 @@
         android:id="@+id/textView27"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/comfortaa"
         android:text="@string/addActivity"
         android:textAlignment="center"
@@ -22,14 +22,14 @@
 
     <LinearLayout
         android:layout_width="370dp"
-        android:layout_height="500dp"
+        android:layout_height="300dp"
         android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="1dp"
-        android:layout_marginBottom="135dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
 
         <TextView
             android:id="@+id/textView28"
@@ -41,12 +41,16 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine4"
+            android:id="@+id/nameEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            android:hint="@string/myName"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView29"
@@ -58,12 +62,16 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine5"
+            android:id="@+id/ageEdit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            android:hint="@string/myAge"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView30"
@@ -75,12 +83,24 @@
             android:textSize="16sp" />
 
         <EditText
-            android:id="@+id/editTextTextMultiLine6"
+            android:id="@+id/cityEdit"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="48dp"
             android:ems="10"
             android:gravity="start|top"
-            android:inputType="textMultiLine" />
+            android:hint="@string/myCity"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:onClick="delete"
+            android:text="@string/deleteButton" />
 
     </LinearLayout>
 
@@ -103,7 +123,7 @@
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="81dp"
         android:fontFamily="@font/comfortaa"
-        android:onClick="confirmItem"
+        android:onClick="save"
         android:text="@string/accept"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

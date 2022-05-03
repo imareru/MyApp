@@ -14,7 +14,6 @@
     <string name="tapButton">*тык*</string>
     <string name="wrongButton">Не работает, не тыкать</string>
     <string name="thirdButton">Завершить</string>
-    <string name="back">Все готово. Пока -></string>
     <string name="meet">Давайте познакомимся?</string>
     <string name="name">Как Вас зовут?</string>
     <string name="age">Сколько Вам лет?</string>
@@ -49,9 +48,14 @@
     <string name="nameDB">Имя</string>
     <string name="ageDB">Возраст</string>
     <string name="cityDB">Город</string>
-    <string name="addActivity">Добавление</string>
-    <string name="editActivity">Редактирование</string>
+    <string name="addActivity">Изменения</string>
     <string name="accept">Подтвердить</string>
+    <string name="deleteButton">Удалить</string>
     <string name="back">Назад</string>
+    <string name="bytes">бит</string>
+
+    <string name="myName">Рената</string>
+    <string name="myCity">Казань</string>
+    <string name="myAge">20</string>
 
 </resources>

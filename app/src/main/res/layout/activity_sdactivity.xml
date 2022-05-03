@@ -10,166 +10,150 @@
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/comfortaa"
         android:text="@string/aboutSD"
         android:textColor="@color/grassGreen"
         android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="408dp"
-        android:layout_height="657dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/isStorageAvailable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/letsCheck"
+        android:textColor="@color/grassGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <EditText
+        android:id="@+id/space"
+        android:layout_width="134dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="103dp"
+        android:ems="10"
+        android:hint="@string/bytes"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/button14" />
 
-        <LinearLayout
-            android:id="@+id/linearLayout5"
-            android:layout_width="370dp"
-            android:layout_height="152dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginEnd="22dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/comfortaa"
+        android:onClick="checkStorage"
+        android:text="@string/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-            <TextView
-                android:id="@+id/textView21"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/comfortaa"
-                android:text="@string/inputText"
-                android:textColor="@color/grassGreen" />
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/comfortaa"
+        android:onClick="goBack"
+        android:text="@string/backButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/inputTextSD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="start|top"
-                android:inputType="textMultiLine" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:baselineAligned="false"
-                android:fontFamily="@font/comfortaa"
-                android:onClick="saveText"
-                android:text="@string/saveButton" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linearLayout6"
-            android:layout_width="370dp"
-            android:layout_height="194dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="22dp"
-            android:orientation="vertical"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
-
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/comfortaa"
-                android:text="@string/outputText"
-                android:textColor="@color/grassGreen" />
-
-            <EditText
-                android:id="@+id/outputTextSD"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:gravity="start|top"
-                android:inputType="textMultiLine" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="260dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/comfortaa"
-                android:onClick="openText"
-                android:text="@string/openButton" />
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="370dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:fontFamily="@font/comfortaa"
-            android:text="@string/backButton"
-            android:textColor="@color/grassGreen"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout6" />
-
-        <Button
-            android:id="@+id/button13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/comfortaa"
-            android:onClick="goBack"
-            android:text="@string/tapButton"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView23" />
-
-        <TextView
-            android:id="@+id/isStorageAvailable"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/comfortaa"
-            android:text="@string/letsCheck"
-            android:textColor="@color/grassGreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <Button
-            android:id="@+id/button14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:fontFamily="@font/comfortaa"
-            android:onClick="checkStorage"
-            android:text="@string/check"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/freeSpace"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="46dp"
-            android:fontFamily="@font/comfortaa"
-            android:text="@string/freeSpace"
-            android:textColor="@color/grassGreen"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/isStorageAvailable" />
+            android:text="@string/outputText"
+            android:textColor="@color/grassGreen" />
 
         <EditText
-            android:id="@+id/space"
-            android:layout_width="134dp"
-            android:layout_height="41dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
+            android:id="@+id/outputTextSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberDecimal"
-            app:layout_constraintStart_toEndOf="@+id/freeSpace"
-            app:layout_constraintTop_toBottomOf="@+id/button14" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            android:gravity="start|top"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:onClick="openText"
+            android:text="@string/openButton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="373dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/comfortaa"
+            android:text="@string/inputText"
+            android:textColor="@color/grassGreen" />
+
+        <EditText
+            android:id="@+id/inputTextSD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:fontFamily="@font/comfortaa"
+            android:onClick="saveText"
+            android:text="@string/saveButton" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/freeSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="42dp"
+        android:fontFamily="@font/comfortaa"
+        android:text="@string/freeSpace"
+        android:textColor="@color/grassGreen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isStorageAvailable" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
