@@ -61,21 +61,19 @@ public class AddItemActivity extends AppCompatActivity {
             adapter.insert(user);
         }
         adapter.close();
-        super.onDestroy();
     }
 
     public void delete(View view){
         adapter.open();
         adapter.delete(userId);
         adapter.close();
-        super.onDestroy();
     }
 
 
     public void turnBack(View view){
         Intent goBackToDB = new Intent(this, DataBaseActivity.class);
         goBackToDB.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT);
-        super.onDestroy();
+        //super.onDestroy();
         startActivity(goBackToDB);
 
     }

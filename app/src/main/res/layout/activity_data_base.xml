@@ -33,6 +33,9 @@
             android:id="@+id/usersList"
             android:layout_width="match_parent"
             android:layout_height="500dp"
+            android:clickable="true"
+            android:contextClickable="true"
+            android:longClickable="true"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

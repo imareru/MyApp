@@ -33,9 +33,8 @@ public class DataBaseActivity extends AppCompatActivity {
     private GestureDetectorCompat lSwipeDetector;
     int i;
 
-    private static final int SWIPE_MIN_DISTANCE = 130;
-    private static final int SWIPE_MAX_DISTANCE = 300;
-    private static final int SWIPE_MIN_VELOCITY = 200;
+    private static final int SWIPE_MIN_DISTANCE = 120;
+    private static final int SWIPE_THRESHOLD_VELOCITY = 200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,14 +42,23 @@ public class DataBaseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_data_base);
 
         i = 1;
-        lSwipeDetector = new GestureDetectorCompat(this, new MyGestureListener());
-        main_layout = (ConstraintLayout) findViewById(R.id.userLayout);
-        main_layout.setOnTouchListener(new View.OnTouchListener(){
+        //lSwipeDetector = new GestureDetectorCompat(this, new MyGestureListener());
+        //main_layout = (ConstraintLayout) findViewById(R.id.userLayout);
+        /*main_layout.setOnTouchListener(new View.OnTouchListener(){
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
                 return lSwipeDetector.onTouchEvent(motionEvent);
             }
-        });
+        });*/
+
+//        final GestureDetector gdt = new GestureDetector(new MyGestureListener());
+//        usersList.setOnTouchListener(new View.OnTouchListener() {
+//            @Override
+//            public boolean onTouch(final View view, final MotionEvent event) {
+//                gdt.onTouchEvent(event);
+//                return true;
+//            }
+//        });
 
 
         usersList = findViewById(R.id.usersList);
@@ -70,17 +78,13 @@ public class DataBaseActivity extends AppCompatActivity {
     private class MyGestureListener extends GestureDetector.SimpleOnGestureListener{
 
         @Override
-        public boolean onDown(MotionEvent e){
-            return true;
-        }
-
-        @Override
         public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-            if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_DISTANCE)
-                return false;
-            if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_MIN_VELOCITY){
+            if (e1.getX() - e2.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
                 AddItemActivity del = new AddItemActivity();
                 del.delete(usersList.getSelectedView());
+                return false; // справа налево
+            } else if (e2.getX() - e1.getX() > SWIPE_MIN_DISTANCE && Math.abs(velocityX) > SWIPE_THRESHOLD_VELOCITY) {
+                return false; // слева направо
             }
             return false;
         }
